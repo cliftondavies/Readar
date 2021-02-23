@@ -4,7 +4,7 @@
 
 ## :tv: Media
 
-[Live Demo Link](https://math-mag-calc.herokuapp.com/)
+[Live Demo Link](https://magic-book-list.herokuapp.com/)
 
 ## :toolbox: Tools & Technologies Used
 
