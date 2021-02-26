@@ -7,28 +7,9 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
-const initialState = {
-  books: {
-    [Math.floor((Math.random() * 100))]: {
-      title: 'YDKJS',
-      category: 'Learning',
-    },
-    [Math.floor((Math.random() * 100))]: {
-      title: 'Star Wars',
-      category: 'Sci-fi',
-    },
-    [Math.floor((Math.random() * 100))]: {
-      title: 'Dunkirk',
-      category: 'History',
-    },
-  },
-};
-
-// const store = createStore(rootReducer, initialState);
-
 /* eslint-disable no-underscore-dangle */
 const store = createStore(
-  rootReducer, initialState,
+  rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 /* eslint-enable */
