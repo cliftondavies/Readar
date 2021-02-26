@@ -7,12 +7,7 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
-/* eslint-disable no-underscore-dangle */
-const store = createStore(
-  rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-);
-/* eslint-enable */
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <React.StrictMode>

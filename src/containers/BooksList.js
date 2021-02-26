@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook } from '../actions/index';
 
-export const BooksList = ({ books, removeBook }) => {
+const BooksList = ({ books, removeBook }) => {
   const defaultBooks = useSelector(state => state.books);
   const booksOnDisplay = books || defaultBooks;
 
@@ -24,7 +24,7 @@ export const BooksList = ({ books, removeBook }) => {
 
       <tbody>
         {Object.keys(booksOnDisplay).map(id => (
-          <Book book={books[id]} iD={id} key={id} deleteBook={handleRemoveBook} />
+          <Book book={booksOnDisplay[id]} iD={id} key={id} deleteBook={handleRemoveBook} />
         ))}
       </tbody>
     </table>
