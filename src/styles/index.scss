@@ -8,6 +8,8 @@
   --azure: #0290ff;
   --black-two: #121212;
   --cool-blue: #4386bf;
+  --warm-grey: #888888;
+  --pinkish-grey: #c4c4c4;
 }
 
 *,
@@ -112,6 +114,10 @@ header {
   line-height: normal;
   letter-spacing: 1.9px;
   color: var(--black-two);
+}
+
+.nav select {
+  margin-left: 5px;
 }
 
 .main {
@@ -289,4 +295,83 @@ header {
   text-align: center;
   background-color: var(--azure);
   color: var(--white-two);
+}
+
+.book-form h3 {
+  margin-bottom: 19px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: var(--warm-grey);
+}
+
+.book-form form {
+  display: flex;
+  align-items: center;
+}
+
+.book-form label:nth-of-type(1) {
+  flex: 2.5;
+}
+
+.book-form label:nth-of-type(2) {
+  flex: 1.5;
+  margin: 0 34px;
+}
+
+
+.book-form input[name="title"] {
+  width: 100%;
+  padding: 13px 0 13px 16px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: var(--white-two);
+}
+
+::placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: var(--pinkish-grey);
+}
+
+.book-form select {
+  width: 100%;
+  padding: 13px 0 13px 16px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: var(--pinkish-grey);
+  background-color: var(--white-two);
+}
+
+.book-form input[type="submit"] {
+  flex: 0.5;
+  padding: 13px 22px 13px 22px;
+  border-radius: 3px;
+  border-color: var(--azure);
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-two);
+  background-color: var(--azure);
 }

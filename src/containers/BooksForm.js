@@ -26,7 +26,7 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <div>
+    <div className="book-form">
       <h3>
         ADD NEW BOOK
       </h3>
