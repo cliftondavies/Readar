@@ -45,17 +45,6 @@ const Book = ({ book, iD, deleteBook }) => (
       </button>
     </div>
   </div>
-
-  // <tr>
-  //   <td>{iD}</td>
-  //   <td>{book.title}</td>
-  //   <td>{book.category}</td>
-  //   <td>
-  //     <button type="button" onClick={() => deleteBook(iD)}>
-  //       Remove Book
-  //     </button>
-  //   </td>
-  // </tr>
 );
 
 Book.propTypes = {
