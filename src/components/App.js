@@ -3,7 +3,7 @@ import BooksForm from '../containers/BooksForm';
 import Navbar from './Navbar';
 
 const App = () => (
-  <div>
+  <div className="content-wrapper">
     <header>
       <Navbar />
     </header>

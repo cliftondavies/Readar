@@ -1,3 +1,18 @@
+@import "./reset";
+
+:root {
+  --pale-grey: #f5f6fa;
+  --black-5:rgba(0, 0, 0, 0.05);
+  --white: #fafafa;
+  --white-two: #ffffff;
+  --azure: #0290ff;
+  --black-two: #121212;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
 body {
   margin: 0;
   font-family:
@@ -24,4 +39,73 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+#root {
+  max-width: 1600px;
+  height: 1434px;
+  padding: 149px 60px 123px 100px;
+  background-color: var(--pale-grey);
+}
+
+.content-wrapper {
+  max-width: 1400px;
+  height: 1097px;
+  margin: 0 40px 65px 0;
+  padding: 0 0 794px;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 var(--black-5);
+  background-color: var(--white);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 95px;
+  margin: 0 0 38px;
+  padding: 23px 99px;
+  background-color: var(--white-two);
+}
+
+.nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+
+.nav h2 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.nav span {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+}
+
+.nav label,
+.nav select,
+.nav option {
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
 }

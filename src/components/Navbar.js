@@ -10,16 +10,18 @@ const Navbar = ({ changeFilter }) => {
   };
 
   return (
-    <nav>
-      <h2>
-        Bookstore CMS
-      </h2>
+    <nav className="nav">
+      <div>
+        <h2>
+          Bookstore CMS
+        </h2>
 
-      <span>
-        BOOKS
-      </span>
+        <span>
+          BOOKS
+        </span>
 
-      <CategoryFilter filterEvent={handleFilterChange} />
+        <CategoryFilter filterEvent={handleFilterChange} />
+      </div>
 
       <img src={user} alt="user logo" />
     </nav>
