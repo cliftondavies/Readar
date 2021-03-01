@@ -19,7 +19,7 @@ const BooksList = ({ books, removeBook }) => { // removed changeFilter
   // };
 
   return (
-    <div>
+    <div className="book-list">
       {(ids && ids.length) ? ids.map(id => (
         <Book book={books[id]} iD={id} key={id} deleteBook={handleRemoveBook} />
       )) : null }

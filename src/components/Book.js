@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import progress from '../assets/progress.png';
 
 const Book = ({ book, iD, deleteBook }) => (
-  <div>
-    <div>
+  <div className="book-info">
+    <div className="book-info-one">
       <span>{book.category}</span>
 
       <h4>{book.title}</h4>
@@ -21,18 +21,24 @@ const Book = ({ book, iD, deleteBook }) => (
       </ul>
     </div>
 
-    <div>
+    <div className="book-info-two">
       <img src={progress} alt="book progress" />
 
       <div>
-        <span>64%</span>
+        <span>
+          {Math.floor((Math.random() * 75))}
+          %
+        </span>
         <span>Completed</span>
       </div>
     </div>
 
-    <div>
+    <div className="book-info-three">
       <span>CURRENT CHAPTER</span>
-      <span>Chapter 17</span>
+      <span>
+        {'Chapter '}
+        {Math.floor((Math.random() * 17))}
+      </span>
 
       <button type="button">
         UPDATE PROGRESS

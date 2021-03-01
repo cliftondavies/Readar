@@ -8,7 +8,7 @@ const App = () => (
       <Navbar />
     </header>
 
-    <main>
+    <main className="main">
       <BooksList />
       <BooksForm />
     </main>
