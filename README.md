@@ -14,10 +14,7 @@
 - CSS3
 - JavaScript ES6
 - React 17.0.1
-- React DOM >17.0.1
 - Redux >4.0.5
-- React Redux 7.2
-- Prop Types >15.7.2
 
 ## :rocket: Getting Started
 
