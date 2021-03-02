@@ -26,30 +26,34 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="title">
-        Title:
-        <input id="title" name="title" onChange={handleChange} value={book.title} required />
-      </label>
-      <br />
+    <div className="book-form">
+      <h3>
+        ADD NEW BOOK
+      </h3>
 
-      <label htmlFor="category">
-        Category:
-        <select name="category" id="category" onChange={handleChange} defaultValue="Choose a category" required>
-          <option value="Choose a category" disabled>Choose a category</option>
-          <option value={CATEGORIES[0]}>{CATEGORIES[0]}</option>
-          <option value={CATEGORIES[1]}>{CATEGORIES[1]}</option>
-          <option value={CATEGORIES[2]}>{CATEGORIES[2]}</option>
-          <option value={CATEGORIES[3]}>{CATEGORIES[3]}</option>
-          <option value={CATEGORIES[4]}>{CATEGORIES[4]}</option>
-          <option value={CATEGORIES[5]}>{CATEGORIES[5]}</option>
-          <option value={CATEGORIES[6]}>{CATEGORIES[6]}</option>
-        </select>
-      </label>
-      <br />
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="title">
+          <input id="title" name="title" onChange={handleChange} value={book.title} placeholder="Book title" required />
+        </label>
+        <br />
 
-      <input type="submit" value="Submit" />
-    </form>
+        <label htmlFor="category">
+          <select name="category" id="category" onChange={handleChange} defaultValue="Category" required>
+            <option value="Category" disabled>Category</option>
+            <option value={CATEGORIES[0]}>{CATEGORIES[0]}</option>
+            <option value={CATEGORIES[1]}>{CATEGORIES[1]}</option>
+            <option value={CATEGORIES[2]}>{CATEGORIES[2]}</option>
+            <option value={CATEGORIES[3]}>{CATEGORIES[3]}</option>
+            <option value={CATEGORIES[4]}>{CATEGORIES[4]}</option>
+            <option value={CATEGORIES[5]}>{CATEGORIES[5]}</option>
+            <option value={CATEGORIES[6]}>{CATEGORIES[6]}</option>
+          </select>
+        </label>
+        <br />
+
+        <input type="submit" value="ADD BOOK" />
+      </form>
+    </div>
   );
 };
 

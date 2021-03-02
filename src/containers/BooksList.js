@@ -1,41 +1,21 @@
-import { useSelector, connect } from 'react-redux';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
-import { removeBook, changeFilter } from '../actions/index';
-import CategoryFilter from '../components/CategoryFilter';
+import { removeBook } from '../actions/index';
 
-const BooksList = ({ books, removeBook, changeFilter }) => {
-  const defaultBooks = useSelector(state => state.books);
-  const booksOnDisplay = books || defaultBooks;
+const BooksList = ({ books, removeBook }) => {
+  let ids;
+  if (books) { ids = Object.keys(books); }
 
   const handleRemoveBook = book => {
     removeBook(book);
   };
 
-  const handleFilterChange = filter => {
-    changeFilter(filter);
-  };
-
   return (
-    <div>
-      <CategoryFilter filterEvent={handleFilterChange} />
-
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {Object.keys(booksOnDisplay).map(id => (
-            <Book book={booksOnDisplay[id]} iD={id} key={id} deleteBook={handleRemoveBook} />
-          ))}
-        </tbody>
-      </table>
+    <div className="book-list">
+      {(ids && ids.length) ? ids.map(id => (
+        <Book book={books[id]} iD={id} key={id} deleteBook={handleRemoveBook} />
+      )) : null }
     </div>
   );
 };
@@ -57,7 +37,6 @@ const mapStateToProps = state => {
 BooksList.propTypes = {
   books: PropTypes.objectOf(PropTypes.object).isRequired,
   removeBook: PropTypes.func.isRequired,
-  changeFilter: PropTypes.func.isRequired,
 };
 
-export default connect(mapStateToProps, { removeBook, changeFilter })(BooksList);
+export default connect(mapStateToProps, { removeBook })(BooksList);
