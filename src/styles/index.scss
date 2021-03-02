@@ -2,13 +2,13 @@
 
 :root {
   --pale-grey: #f5f6fa;
-  --black-5:rgba(0, 0, 0, 0.05);
+  --black-5: rgba(0, 0, 0, 0.05);
   --white: #fafafa;
-  --white-two: #ffffff;
+  --white-two: #fff;
   --azure: #0290ff;
   --black-two: #121212;
   --cool-blue: #4386bf;
-  --warm-grey: #888888;
+  --warm-grey: #888;
   --pinkish-grey: #c4c4c4;
 }
 
@@ -81,7 +81,7 @@ header {
 }
 
 .nav h2 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -92,7 +92,7 @@ header {
 }
 
 .nav span {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -106,7 +106,7 @@ header {
 .nav select,
 .nav option {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -147,9 +147,41 @@ header {
   flex: 1;
 }
 
+.book-info-two {
+  display: flex;
+  align-items: center;
+  border-right: solid 1px #e8e8e8;
+  padding-right: 79px;
+}
+
+.book-info-two span {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.book-info-three {
+  padding-left: 59px;
+  font-family: RobotoSlab, sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  color: var(--black-two);
+}
+
+.book-info-three span {
+  display: block;
+}
+
 .book-info-one span:first-child {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -161,7 +193,7 @@ header {
 
 .book-info-one h4 {
   margin: 4px 0 3px 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -172,7 +204,7 @@ header {
 }
 
 .book-info-one span:nth-of-type(2) {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -185,7 +217,7 @@ header {
 .book-info-one ul {
   display: flex;
   margin-top: 20px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -211,7 +243,7 @@ header {
 .book-info-one button {
   border: 0;
   padding: 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -223,13 +255,6 @@ header {
   cursor: pointer;
 }
 
-.book-info-two {
-  display: flex;
-  align-items: center;
-  border-right: solid 1px #e8e8e8;
-  padding-right: 79px;
-}
-
 .book-info-two img {
   width: 90px;
   height: 90px;
@@ -239,17 +264,6 @@ header {
   padding-left: 15px;
 }
 
-.book-info-two span {
-  display: block;
-  font-family: Montserrat;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--black-two);
-}
-
 .book-info-two span:first-child {
   font-size: 32px;
 }
@@ -257,20 +271,6 @@ header {
 .book-info-two span:last-child {
   opacity: 0.5;
   font-size: 14px;
-}
-
-.book-info-three {
-  padding-left: 59px;
-  font-family: RobotoSlab;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  color: var(--black-two);
-}
-
-.book-info-three span {
-  display: block;
 }
 
 .book-info-three span:first-child {
@@ -299,7 +299,7 @@ header {
 
 .book-form h3 {
   margin-bottom: 19px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
@@ -323,7 +323,6 @@ header {
   margin: 0 34px;
 }
 
-
 .book-form input[name="title"] {
   width: 100%;
   padding: 13px 0 13px 16px;
@@ -333,7 +332,7 @@ header {
 }
 
 ::placeholder {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -348,7 +347,7 @@ header {
   padding: 13px 0 13px 16px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -364,7 +363,7 @@ header {
   padding: 13px 22px 13px 22px;
   border-radius: 3px;
   border-color: var(--azure);
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 13px;
   font-weight: bold;
   font-stretch: normal;
