@@ -1,10 +1,10 @@
-# Magic Books
+# Readar
 
-> An app to organize and manage a simple book list.
+> A web app to keep track of, organize and manage a reading list.
 
 ## :tv: Media
 
-[Live Demo Link](https://magic-book-list.herokuapp.com/)
+[Live Demo Link](https://readar.herokuapp.com/)
 
 ## :toolbox: Tools & Technologies Used
 
