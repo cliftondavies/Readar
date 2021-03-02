@@ -13,7 +13,7 @@ const Navbar = ({ changeFilter }) => {
     <nav className="nav">
       <div>
         <h2>
-          Bookstore CMS
+          Readar
         </h2>
 
         <span>
